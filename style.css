@@ -1,0 +1,28 @@
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  display: flex;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  grid-template-columns: repeat(3, auto);
+}
+
+.container {
+    margin-top: 5%;
+    margin-left: 35%;
+    margin-right: 35%;
+}
+
+.container div {
+
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  border: 1px solid black;
+  display: flex;
+  float: left;
+}
