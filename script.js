@@ -13,3 +13,11 @@ const container = document.querySelector(".container");
     }
 
   makeGrid();
+ const cellHover = document.querySelectorAll(".cell");
+ 
+
+ cellHover.forEach((cell) => {
+    cell.addEventListener("mouseenter", (event) => {
+        event.target.style.backgroundColor = "red";
+    });
+ });
