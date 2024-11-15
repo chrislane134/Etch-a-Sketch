@@ -4,7 +4,7 @@ const reset = document.querySelector("button");
 let response = 0; 
 
 reset.addEventListener("click", () => {
-  let response = parseInt(prompt("How many squares you want? "), 10) || 0;
+  let response = parseInt(prompt("How many square do you want?"), 10) || 0;
   if (response > 100){
     alert('Please try again with a number less than 100');
   } else {
@@ -19,6 +19,7 @@ const container = document.querySelector(".container");
     container.innerHTML = '';
     container.style.display = 'flex';
     container.style.flexWrap = 'wrap';
+    container.style.alignItems = 'center';
     container.style.width = '600px';
     container.style.height = '600px';
 
